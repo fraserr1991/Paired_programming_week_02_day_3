@@ -11,3 +11,5 @@ class Customer:
     def add_energy(self, amount):
         self.energy += amount
 
+    def remove_energy(self, amount):
+        self.energy -= amount

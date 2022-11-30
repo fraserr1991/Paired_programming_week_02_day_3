@@ -1,9 +1,10 @@
 class CoffeeShop:
 
-    def __init__(self, name, till, drink):
+    def __init__(self, name, till, drink, food):
         self.name = name
         self.till = till
         self.drink = drink
+        self.food = food
 
     def increase_till(self, amount):
         self.till += amount
@@ -24,3 +25,8 @@ class CoffeeShop:
             return True
         else:
             return False
+
+    def find_food(self, food_name):
+        for name_of_food in self.food:
+            if name_of_food.name == food_name:
+                return name_of_food
